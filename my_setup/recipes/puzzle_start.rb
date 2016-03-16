@@ -1,4 +1,6 @@
 bash "puzzle_start" do
-  code 'service pz-agentd start'
-  code 'serviee pz-commd start'
+  code <<-EOC
+    service pz-agentd start
+    service pz-commd start
+  EOC
 end
