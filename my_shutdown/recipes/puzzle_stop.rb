@@ -1,4 +1,6 @@
 bash "puzzle_stop" do
-  code 'service pz-agentd stop'
-  code 'service pz-commd stop'
+  code <<-EOC
+    service pz-agentd stop
+    service pz-commd stop
+  EOC
 end
